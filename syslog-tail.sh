@@ -13,7 +13,7 @@
 tail -fn0 /var/log/syslog | while read line;      # -f - output appended data as the file grows
 do
 
-echo $line | egrep -i "refused|invalid|error|fail|lost|shut|down|offline"
+echo $line | grep -E -i "refused|invalid|error|fail|lost|shut|down|offline"
         if [ $? = 0 ]; then
                 echo $line >> /tmp/filtered-log
         fi
