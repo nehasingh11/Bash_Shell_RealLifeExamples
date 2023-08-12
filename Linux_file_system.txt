@@ -1,0 +1,39 @@
+
+cd /
+
+1. cd /home -> the directory where all users files are stored. Multiple directory for multiple users.
+      
+2. cd /home/azureuser
+      Subdirectories:
+      .  ..  .bash_logout  .bashrc  .cache  .profile  .ssh
+
+3. cd /root -> root user directory
+4. cd /bin -> contains binary files. Binary files for commands like "ls", "cp". Executable files for users.
+              and not system binaries. Does not require root previles.
+5. cd /sbin -> System binaries. Requires root previles like "shutdown" , "ifconfig", "fdisk".
+6. cd /lib ->  Shared libraries for bin and sbin. And used by other applications. 
+      /lib32, /lib64, /libx32 -> different binary formats.
+
+7. cd /boot -> contains stuff that is important to boot the system. 
+8. cd /etc -> administrative scripts, config files, 
+9. cd /opt -> optional directory. Store software packages that are installed manually or installed
+              by third party. Like firefox, google, zoom.
+10. cd /usr -> user relevant files for read only. Like changing fonts
+11. cd /var -> contains variable files. Files that change during system operations.
+               log files. Below is the example of history log.
+
+               /var/log/apt$ cat history.log
+              >>
+                Start-Date: 2023-08-11  20:05:42
+                Commandline: apt install net-tools
+                Requested-By: azureuser (1000)
+                Install: net-tools:amd64 (1.60+git20180626.aebd88e-1ubuntu1)
+                End-Date: 2023-08-11  20:06:41
+
+12. cd /tmp -> directory for temporary files. Short lived files. Not meant to survive reboots. 
+               publically writable. Seen publically. 
+
+13. cd /dev -> different devices. Every device in linux is represented by a file. The file is how you 
+              access or how you work with a specific device (hard drive, nvme, usb) 
+              /dev/null -> output is descarded.
+

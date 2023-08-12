@@ -1,0 +1,32 @@
+This file will give step by step method to connect to Linux VM using putty with ssh keys
+
+Required : PuTTY tool and PuTTYgen
+
+1. Create a linux VM on cloud platform. 
+   Authentication type = SSH public key
+
+   Just before creation it will ask you to download the .pem SSH public key. Download it.
+
+2. Open PuTTYgen tool -> conversion -> import key
+   browse the path to the downloaded .pem SSH public key of the server.
+   Save the private key (It will be saved in .ppk format)
+
+3. Open PuTTY -> Session
+   a. put the hostname as "azureuser@13.92.125.211" (username@publicIP)
+   b. Go to SSH -> Auth -> Credentials -> Browse the private key file for authentication (.ppk file
+   c. generated in last step)
+   d. Save the session if you want for future connection under "sessions".
+   e. Click open.
+
+########################################################################################################
+
+Connect using password
+
+1. Create a linux VM on cloud platform.
+   Authentication type = password
+2. Open PuTTY tool -> Session
+   a. Put the hostname as "azureuser@20.119.39.209" (username@publicIP)
+   b. click open
+   c. It will ask you the password. Put the password you have set duing VM creation. 
+
+ 
