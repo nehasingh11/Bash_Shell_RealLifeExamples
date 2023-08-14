@@ -1,0 +1,8 @@
+1. Debug mode
+   set -x 
+2. Exit the script when there is an error
+   set -e
+3. Exit the script when there is an error in pipe
+   set -o pipefail
+
+CURL vs WGET -?

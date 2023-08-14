@@ -36,4 +36,6 @@ cd /
 13. cd /dev -> different devices. Every device in linux is represented by a file. The file is how you 
               access or how you work with a specific device (hard drive, nvme, usb) 
               /dev/null -> output is descarded.
+14. cd /media -> mount external drives
+
 
